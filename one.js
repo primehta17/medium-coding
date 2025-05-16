@@ -1,6 +1,5 @@
 let arr1 = [1, 4, 5, 7, 9];
 let arr2 = [2, 3, 6];
-
 function merge(arr1, arr2) {
     let arr = [];
     for (let i = 0; i < arr1.length; i++) {
@@ -9,7 +8,6 @@ function merge(arr1, arr2) {
     for (let i = 0; i < arr2.length; i++) {
         arr.push(arr2[i]);
     }
-
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr.length - 1; j++) {
             if (arr[j] > arr[j + 1]) {
@@ -19,7 +17,6 @@ function merge(arr1, arr2) {
             }
         }
     }
-
     return arr;
 }
 
