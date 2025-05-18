@@ -1,4 +1,4 @@
-function firstReapeat(str){
+function firstRepeat(str){
     const seen = new Set();
     for(let char of str){
        
@@ -10,4 +10,5 @@ function firstReapeat(str){
     return null;
 }
 
-console.log(firstReapeat("geeksofgooeks"))
+console.log(firstRepeat("geeksofgooeks"));
+console.log(firstRepeat("abcdef"));
