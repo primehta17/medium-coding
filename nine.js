@@ -10,5 +10,12 @@ function firstRepeat(str){
     return null;
 }
 
-console.log(firstRepeat("geeksofgooeks"));
-console.log(firstRepeat("abcdef"));
+// console.log(firstRepeat("geeksofgeeks"));
+// console.log(firstRepeat("abcdef"));
+
+function setelement(str){
+    let newset = new Set(str);
+  return newset;
+
+}
+console.log(setelement("geeksofgeeks"))
