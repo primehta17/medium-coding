@@ -12,10 +12,3 @@ function firstRepeat(str){
 
 console.log(firstRepeat("geeksofgeeks"));
 console.log(firstRepeat("abcdef"));
-
-function setelement(str){
-    let newset = new Set(str);
-  return newset;
-
-}
-console.log(setelement("geeksofgeeks"))
