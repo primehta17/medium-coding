@@ -22,6 +22,13 @@ console.log(uniquevalue("geeksofgeeks"));
 let arr = new Set([1,2,2,3]);
 console.log(arr);
 
+//4
+let newarr = new Set();
+newarr.add(1);
+newarr.add(2);
+newarr.delete(1);
+newarr.clear();
 
+console.log(newarr);
 
 
