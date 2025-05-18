@@ -44,6 +44,19 @@ const setB = new Set([3,4,5]);
 //Union
 const union = new Set([...setA,...setB]);
 console.log(union);
-
+//Intersection
 const intersection = new Set([...setA].filter(x=>setB.has(x)));
 console.log(intersection);
+
+
+//7
+const numbers = [1, 2, 2, 3, 4, 4, 5];
+const uniqueNumbers = [... new Set(numbers)];
+console.log(uniqueNumbers); // Output: [1, 2, 3, 4, 5];
+
+//8 size
+const numb = new Set([1, 2, 2, 3, 4, 4, 5]);
+let size=numb.size;
+console.log(size);
+
+
