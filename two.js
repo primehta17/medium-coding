@@ -31,4 +31,11 @@ newarr.clear();
 
 console.log(newarr);
 
+//5
+
+let newSet= new Set([1,2,3,4]);
+console.log(newSet.has(2));
+console.log(newSet.has(9));
+
+
 
