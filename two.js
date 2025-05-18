@@ -63,4 +63,16 @@ console.log(size);
 const myset = new Set();
 myset.add({a:"abc"});
 myset.add({b:"sss"});
-console.log(myset.size)
+console.log(myset.size);
+
+//10 iteraction
+let setSet = new Set(['a', 'b', 'c']);
+//using for...of
+for(const value of setSet){
+  console.log(value);
+}
+
+//using forEach
+setSet.forEach(value=>{
+  console.log(value);
+});
