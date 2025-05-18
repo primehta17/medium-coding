@@ -59,4 +59,8 @@ const numb = new Set([1, 2, 2, 3, 4, 4, 5]);
 let size=numb.size;
 console.log(size);
 
-
+//9
+const myset = new Set();
+myset.add({a:"abc"});
+myset.add({b:"sss"});
+console.log(myset.size)
