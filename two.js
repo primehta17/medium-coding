@@ -1,11 +1,7 @@
-function findLargest(num) {
-    let max=num[0];
-  for(let i=0;i<num.length;i++){
-    if(max< num[i]){
-        max=num[i]
-    }
-  }  
- 
-  return max;
+
+function setelement(str){
+  let newset = new Set(str);
+return [...newset];
+
 }
-console.log(findLargest("39452"))
+console.log(setelement("geeksofgeeks"))

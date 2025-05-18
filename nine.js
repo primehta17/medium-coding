@@ -10,8 +10,8 @@ function firstRepeat(str){
     return null;
 }
 
-// console.log(firstRepeat("geeksofgeeks"));
-// console.log(firstRepeat("abcdef"));
+console.log(firstRepeat("geeksofgeeks"));
+console.log(firstRepeat("abcdef"));
 
 function setelement(str){
     let newset = new Set(str);
