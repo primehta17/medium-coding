@@ -1,6 +1,6 @@
 
 //1
-
+// convert a Set to an Array
 function setelement(str){
   let newset = new Set(str);
   
@@ -37,5 +37,13 @@ let newSet= new Set([1,2,3,4]);
 console.log(newSet.has(2));
 console.log(newSet.has(9));
 
+//6
+const setA = new Set([1,2,3]);
+const setB = new Set([3,4,5]);
 
+//Union
+const union = new Set([...setA,...setB]);
+console.log(union);
 
+const intersection = new Set([...setA].filter(x=>setB.has(x)));
+console.log(intersection);
