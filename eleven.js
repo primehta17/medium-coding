@@ -28,3 +28,17 @@ function palindrom(str){
    return newstr==str;
 }
 console.log(palindrom("malayalam"));
+
+function seenarr(arr){
+    let seen={};
+   for(let i=0;i<arr.length;i++){
+    let abc=arr[i];
+      if(seen[abc]==undefined){
+        seen[abc]=1;
+      }else{
+        seen[abc]++;
+      }
+   }
+   return seen;
+}
+console.log(seenarr([1,2,2,3]))
