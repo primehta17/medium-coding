@@ -59,4 +59,15 @@ function removeduplicatearr(arr){
 }
 console.log(removeduplicatearr([1,2,2,3]));
 
+function twoanangram(str1,str2){
 
+  let s1=str1.split("").sort().join('');
+  let s2=str2.split("").sort().join('');
+  console.log(s2,s1)
+  if(s1===s2){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(twoanangram("listen","silent"));
