@@ -41,4 +41,6 @@ function seenarr(arr){
    }
    return seen;
 }
-console.log(seenarr([1,2,2,3]))
+console.log(seenarr([1,2,2,3]));
+
+
