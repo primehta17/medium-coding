@@ -116,4 +116,15 @@ function factorial(num){
     }
     return fact;
 }
-console.log(factorial(5))
+console.log(factorial(5));
+
+function removespacestr(str){
+    let newstr='';
+    for(let i=0;i<str.length;i++){
+        if(str[i]!==" "){
+            newstr+=str[i];
+        }  
+    }
+    return newstr;
+}
+console.log(removespacestr("Hello javascript!"))
