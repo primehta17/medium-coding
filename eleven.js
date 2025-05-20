@@ -10,11 +10,12 @@ console.log(reverse("sting reverse"));
 
 function longestword(str){
     let newstr= str.split(" ");
-    let longestword='';
-    for(let i=0;i<newstr.length;i++){
-       if(newstr[i]>longestword.length){
-        
-       }
+   let longword='';
+   for(let i of newstr){
+    if(i.length>longword.length){
+        longword=i;
     }
+   }
+   return longword;
 }
 console.log(longestword("sting qwerty longestword"));
