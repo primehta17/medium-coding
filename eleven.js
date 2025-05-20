@@ -43,4 +43,20 @@ function seenarr(arr){
 }
 console.log(seenarr([1,2,2,3]));
 
+function removeduplicatearr(arr){
+    let seen={};let newarr=[];
+   for(let i=0;i<arr.length;i++){
+    let abc=arr[i];
+      if(seen[abc]==undefined){
+        seen[abc]=1;
+        newarr.push(abc);
+      }else{
+        seen[abc]++;
+        
+      }
+   }
+   return newarr;
+}
+console.log(removeduplicatearr([1,2,2,3]));
+
 
