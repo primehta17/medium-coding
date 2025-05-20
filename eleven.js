@@ -92,4 +92,18 @@ function largestnum(arr){
     }
     return max;
 }
-console.log(largestnum([3,32,44,35]))
+console.log(largestnum([3,32,44,35]));
+
+function prime(num){
+
+    if(num<=1){
+        return false;
+    }
+   for(let i=2;i*i<=num;i++){
+    if(num%i==0){
+        return false;
+    }
+   }
+   return true;
+}
+console.log(prime(21))
