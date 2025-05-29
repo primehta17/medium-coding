@@ -1,7 +1,6 @@
 function firstRepeat(str){
     const seen = new Set();
     for(let char of str){
-       
         if(seen.has(char)){
             return char;
         }
