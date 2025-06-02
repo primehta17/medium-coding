@@ -14,4 +14,4 @@ function reverseStack(str){
 
 }
 
-console.log(reverseStack("hello javascript"))
+console.log(reverseStack("hello javascript"));
