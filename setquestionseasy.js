@@ -6,15 +6,30 @@ set.add(arr[i]);
 }
 console.log(set);
 
-//1st method to put in array
+//1st method to put in array (of)
  let arrayadd=[];
 for(let i of set){
     arrayadd.push(i);
 }
 console.log(arrayadd);
-//2 nd method to put in array
+//2 nd method to put in array(spread operator)
 let newArr= [...set];
 console.log(newArr)
+
+
+//3rd method to put in array(foreach)
+let valArr=[];
+set.forEach((val)=>{
+   valArr.push(val)
+})
+console.log(valArr);
+
+
+//3rd method to put in array(Array.from)
+const uniqueArray = Array.from(set);
+console.log(uniqueArray);
+
+//<=======================Questions========================>//
 
 //only unique one
 
