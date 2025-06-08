@@ -22,4 +22,24 @@ for(let i=0;i<arr.length;i++){
 //    }
 newmap.set(arr[i], (newmap.get(arr[i])||0)+1)
 }
-console.log(newmap)
+console.log(newmap);
+
+
+//sort the people(which is asking in answer take values)
+let names = ["Mary","John","Emma"];
+let heights = [180,165,170];
+
+var sortPeople = function(names, heights) {
+    
+let people = new Map();
+for(let i=0;i<names.length;i++){
+    people.set(heights[i],names[i]);
+}
+heights.sort((a,b)=>b-a);
+
+for(let i=0;i<heights.length;i++){
+    names[i] = people.get(heights[i]);
+}
+return names;
+};
+console.log(sortPeople(names, heights));
