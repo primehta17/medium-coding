@@ -6,3 +6,4 @@ function xor(arr){
  return result;
 }
 console.log(xor([2,4,8,6]))
+//8
