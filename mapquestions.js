@@ -9,6 +9,9 @@ map.set('contact',[976754344, 3424563])
 // console.log(map);
 
 
+
+//Print the Frequency of Each Character 
+
 let arr = [10,3,5,6,10,3,5,5];
 let newmap= new Map();
 for(let i=0;i<arr.length;i++){
