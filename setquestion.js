@@ -6,6 +6,15 @@ set.add(arr[i]);
 }
 console.log(set);
 
+//1st method to put in array
+ let arrayadd=[];
+for(let i of set){
+    arrayadd.push(i);
+}
+console.log(arrayadd);
+//2 nd method to put in array
+let newArr= [...set];
+console.log(newArr)
 
 //only unique one
 
