@@ -22,3 +22,20 @@ let uniqueset= function (arr){
 }
 console.log( uniqueset(arr));
 
+
+//pangram
+
+let checkIfPangram = function(sentence){
+    let alpha= new Set();
+   for(let i=0;i<sentence.length;i++){
+    let char = sentence.charAt(i);
+    // console.log(char);
+        alpha.add(char);
+   }
+  return alpha.size===26;
+}
+console.log(checkIfPangram("apple"));
+console.log(checkIfPangram("thequickbrownfoxjumpsoverthelazydog")); 
+
+
+
