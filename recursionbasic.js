@@ -33,13 +33,25 @@ function printhello(n){
 }
 printhello(5);
 
-//print n-1 numbers
+//print n numbers(desc)
 
 function printnum(num){
     if(num===0){
         return;
     }
     console.log(num);
-     printnum(--num);
+     printnum(num-1);//(--num)same
 }
-console.log(printnum(10));
+printnum(10);
+
+console.log("<++++++asc num +++")
+
+//print n numbers(asc)
+function printnumasc(n){
+   if(n===0){
+    return ;
+   }
+   printnumasc(n-1);
+   console.log(n);
+}
+printnumasc(6);
