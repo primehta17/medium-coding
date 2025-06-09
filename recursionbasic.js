@@ -46,7 +46,8 @@ printnum(10);
 
 console.log("<++++++asc num +++")
 
-//print n numbers(asc)
+//print n numbers(asc)//BACKTRACKING// in stack function value is on hold
+// and after return its print the value excution
 function printnumasc(n){
    if(n===0){
     return ;
@@ -55,3 +56,16 @@ function printnumasc(n){
    console.log(n);
 }
 printnumasc(6);
+
+
+console.log("******* factorial *****")
+
+//factorial recusrsion
+
+function factorial(num){
+  if(num === 1){
+    return num;
+  }
+  return num * factorial(num-1);
+}
+console.log(factorial(5))
