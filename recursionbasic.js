@@ -35,10 +35,11 @@ printhello(5);
 
 //print n-1 numbers
 
-// function printnum(num){
-//     if(num===0){
-//         return;
-//     }
-//     return num, printnum(num-1)
-// }
-// console.log(printnum(10));
+function printnum(num){
+    if(num===0){
+        return;
+    }
+    console.log(num);
+     printnum(--num);
+}
+console.log(printnum(10));
