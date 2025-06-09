@@ -1,14 +1,3 @@
-//sum all
-
-function sum(n){
-  if(n===0){
-    return 0;
-  }
-  console.log(n)
-  return n + sum(n-1)
-}
-console.log(sum(5));
-
 
 //n times hello world!
 
@@ -57,10 +46,22 @@ function printnumasc(n){
 }
 printnumasc(6);
 
+//sum all//BACKTRACKING//
+
+console.log("+++++add++++")
+function sum(n){
+  if(n===0){
+    return 0;
+  }
+  console.log(n)
+  return n + sum(n-1)
+}
+console.log(sum(5));
+
 
 console.log("******* factorial *****")
 
-//factorial recusrsion
+//factorial recusrsion//BACKTRACKING//
 
 function factorial(num){
   if(num === 1){
@@ -69,3 +70,14 @@ function factorial(num){
   return num * factorial(num-1);
 }
 console.log(factorial(5))
+
+console.log("******* fibonacci series *****")
+// fibonacci series//BACKTRACKING//
+
+function fibonacci(n){
+    if(n==0 || n==1){
+        return n;
+    }
+    return fibonacci(n-1) + fibonacci(n-2);
+}
+console.log( fibonacci(7))
