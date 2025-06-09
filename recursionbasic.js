@@ -10,3 +10,14 @@ function sum(n){
 console.log(sum(5));
 
 
+//n times hello world!
+
+function hello(n){
+    if(n===0){
+        return;
+    }
+    console.log( "hello ")
+    hello(n-1);
+}
+
+hello(5);
