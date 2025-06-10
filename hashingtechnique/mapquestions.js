@@ -43,3 +43,19 @@ for(let i=0;i<heights.length;i++){
 return names;
 };
 console.log(sortPeople(names, heights));
+
+
+
+nums1 = [1,2,2,1], nums2 = [2,2];
+var intersection = function(nums1, nums2) {
+let newset=new Set();
+ let newarr = [...nums1,...nums2];
+ for(let i=0;i<newarr.length;i++){
+ newset.add(newarr[i]);
+ }
+ let n=[];
+  console.log(nums2,newset);
+
+    
+};
+console.log(intersection(nums1,nums2))
