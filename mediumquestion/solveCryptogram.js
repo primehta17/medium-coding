@@ -8,4 +8,7 @@ function solveCryptogram(cipher, map) {
      return result;
 }
 
-console.log(solveCryptogram('abc',{'a':'d','b':'i','c':'o'}));
+console.log(solveCryptogram('abc', {'a':'d', 'b':'i', 'c':'o'})); // "dio"
+console.log(solveCryptogram('hello, world!', {
+  'h': 'j', 'e': 'i', 'l': 'l', 'o': 'q', 'w': 'y', 'r': 't', 'd': 'f'
+})); // "jillq, yqltf!"
