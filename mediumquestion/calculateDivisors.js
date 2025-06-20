@@ -7,4 +7,5 @@ function calculateDivisors(num) {
    }
    return count;
 }
-console.log(calculateDivisors(12));
+console.log(calculateDivisors(12)); 
+console.log(calculateDivisors(66)); 
