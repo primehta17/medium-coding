@@ -7,7 +7,7 @@ switch(true){
         console.log("invalid");
 }
 
-let num=0.1+0.2;//0.30000006
+let num=0.1+0.2;//0.300000000006
 switch(num){
     case 0.3: console.log("hello");
     break;
