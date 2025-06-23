@@ -11,7 +11,7 @@ function secondmax(arr){
     }
      return secondmax;
 }
-let arr=[3,4,5,2,,6,9];
+let arr=[3,4,5,2,,6,9,9];
 // console.log(secondmax(arr));
 
 
@@ -23,7 +23,7 @@ function secondshmax(arr){
         if(arr[i]>max){
             secondmax=max;
             max=arr[i];
-        }else if(arr[i]>secondmax){
+        }else if(arr[i]>secondmax && arr[i]!==max){
             secondmax=arr[i];
         }
     }
