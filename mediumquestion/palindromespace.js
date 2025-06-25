@@ -3,7 +3,7 @@ function palindromeWithSpaces(s) {
   const lower = s.toLowerCase();
 
   for (let i = 0; i < lower.length; i++) {
-    if (lower[i] !== ' ') {
+    if (lower[i] !== ' ' && lower[i] !== ',' && lower[i] !== ':') {
       filtered += lower[i];
     }
   }
@@ -17,4 +17,4 @@ function palindromeWithSpaces(s) {
   return rev === filtered;
 }
 
-console.log(palindromeWithSpaces("I mam i"));  // → true
+console.log(palindromeWithSpaces("A man, a plan, a canal: Panama"));  // → true
