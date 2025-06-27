@@ -1,4 +1,4 @@
-function sepd(str) {
+function separateVowelsConsonants(str) {
        let newarr=[];let s='';let d='';
     for(let i=0;i<str.length;i++){
         if(str[i]===' '){
@@ -8,7 +8,10 @@ function sepd(str) {
               || str[i]==='o'  || str[i]==='u' ){
                s+=str[i];
             }  else{
-                 d+=str[i];
+                let rege=/^[,!]/;
+                if(!rege.test(str[i])){
+                    d+=str[i];
+                }
             } 
     }
 newarr.push(s);
@@ -16,4 +19,5 @@ newarr.push(d);
 return newarr;
 }
 let str="Good Morning!"
-console.log(sepd(str));
+console.log(separateVowelsConsonants(str));
+console.log(separateVowelsConsonants("Hello, World!"));
