@@ -10,5 +10,10 @@ function flatten(arr){
    return newarr;
 }
 
-console.log(flatten([12,21,[33,24,[45,39]]]));
+console.log(flatten([12,21,[33,24,[45,[39]]]]));
+
+
+let array=[12,21,[33,24,[45,39]]];
+let narray=array.flat(2)
+console.log(narray);
 
