@@ -9,6 +9,10 @@ function findBoomerangs(nums) {
         newarr.push(trio);
       }
    }
+   newarr.sort((a, b) => a[0] - b[0]);
    return newarr;
 }
 console.log(findBoomerangs([3,7,3,2,1,5,1,2,2,-2,2]));
+// [ [ 1, 5, 1 ], [ 2, -2, 2 ], [ 3, 7, 3 ] ]
+console.log(findBoomerangs([3,7,3,2,1,5,2,2,-2,2]));
+// [ [ 2, -2, 2 ], [ 3, 7, 3 ] ]
