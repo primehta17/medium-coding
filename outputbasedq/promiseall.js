@@ -30,8 +30,15 @@ function promiseal(){
     promise3.then((res)=>console.log("Promise 3", res))
             .catch((e)=>console.log("Promise 3 Reject:",e));
 
+// Promise 1 Reject: A
+// Promise 2 Reject: B
+// Promise 3 C
+
 }
 promiseal();
+
+
+// Promise.all Error: A
 
 
 // 🧠 Behavior of Promise.all():
