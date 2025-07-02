@@ -2,8 +2,8 @@
 function delay(val){
     return new Promise((resolve,reject)=>{
          setTimeout(()=>{
-            resolve();
             console.log(val);
+            resolve();
         },1000);
     }
      )
