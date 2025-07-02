@@ -38,3 +38,27 @@ function workdone(){
 workdone();
 
 //C
+
+
+
+
+
+
+// 🧠 Behavior of Promise.any():
+// Promise.any waits for any one promise to resolve.
+
+// As soon as one promise fulfills, it resolves immediately with that value.
+
+// If all promises reject, it goes to .catch() with an AggregateError.
+
+// 🧪 In your case:
+// promise1 rejects after 1s
+
+// promise2 rejects after 2s
+
+// promise3 resolves after 3s
+
+// ✅ Since promise3 eventually resolves,
+// → Promise.any will resolve after 3s with its value.
+
+// ❗ Even though promise1 and promise2 reject, Promise.any ignores them as soon as one fulfills.
