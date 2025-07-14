@@ -11,7 +11,7 @@ function searchinsertposition35(arr,target){
     last = mid-1;
     }
   }
-return -1;
+return first;
 
 
 }
