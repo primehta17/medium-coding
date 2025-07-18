@@ -1,17 +1,13 @@
 function isPandigital(num) {
-   if(num.length!==10){
-    return false;
-   }
-   let set = new Set();
-   for(let ch of num){
- if(ch<'0' || ch>'9'){
-    return false;
-   }
-  set.add(ch)
-   
- 
-  
-
+    if(num.length!==10){
+        return false;
+    }
+    let set = new Set();
+    for(let i=0;i<num.length;i++){
+        if(num[i]<'0' || num[i]>'9'){
+            return false;
+        }
+    set.add(num[i])
    }
    return set.size===10;
 }
