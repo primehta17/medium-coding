@@ -11,10 +11,14 @@ function convertToMorse(str) {
     let s='';
     
     for(let i=0;i<str.length;i++){
-        for(let j in morseCode){
-            if(str[i]===j){
-                s+=morseCode[j]+" ";
-            }
+        // for(let j in morseCode){
+        //     if(str[i]===j){
+        //         s+=morseCode[j]+" ";
+        //     }
+        // }
+
+        if(morseCode[str[i]]){
+             s+=morseCode[str[i]]+" ";
         }
     }
     return s.trim();
