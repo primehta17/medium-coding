@@ -1,5 +1,5 @@
 function concatenateArrays(arr1, arr2) {
-    // return [...arr1,arr2].sort((a,b)=>a-b);
+  
 let newarr=[];
     for(let i=0;i<arr1.length;i++){
         newarr.push(arr1[i]);
