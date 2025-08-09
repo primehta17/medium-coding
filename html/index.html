@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function validate(){
+      
+       var username = document.getElementById("uname").value;
+      //  var regex =/E00/;
+      //  var regex = new RegExp("E00","i");//i is for case insestive
+        //  var regex =/[sdp]imple/;//any one charcter in square bracket
+          // var regex =/[a-m]00/;//in range of a to m character anywhere in sentence
+          // var regex =/[a-m A-M]00/; //any charter between a-m it maybe capital or small alplabet
+      // var regex =/[0-9]00/; //any digit range
+            // var regex =/[0-5]0[6-9]0/; //any digit range
+            //  var regex =/[^1abc]00/; //exclude this sqaure character in first place or place where caret sign is used
+              // var regex =/[^1-4]00/;//range exclude
+// var regex =/^[1-4]00/;//^outside should be start by the square charcter not anything else
+
+// var regex =/^[1-4]00$/; //after $ no character is acceptable
+
+// var regex=/^[5-9][a-z]{8}0$/;
+// var regex =/a.b/; //dot is special charater accept anything between a and b
+// var regex =/a\.b/; //for using dot itself
+              //PHONE Number Validation
+
+              // var regex = /[7-9][0-9]{9}/; // in curly bracses  till how many character repeated  /a-z/ or number of the square range
+              // var regex = /[7-9][0-9]{2,9}/; //range should 2 to 9 charater
+              // var regex = /[7-9][0-9]+/; //range should be dyanmic range different sizes
+              //  var regex = /[7-9]\d{9}/; //
+                // \d match [0-9] any digit
+                    // var regex = /[7-9]\w{9}/; 
+                //  \w match [a-z,A-Z,0-9,_] any word character
+                    // var regex  = /[7-9]\s{9}/; 
+                // \s match whitspace vharacter(eg -spaces & tabs)
+                    // var regex = /[7-9]\t{9}/; 
+                //  \t match any tab
+                // var regex = /^[7-9]\d{9}$/; /////ANSWER for Indian number
+                 
+                //EMAIL Validation
+                // var regex =/^[\w].[\w]@.[.a-z]{7}[!.a-z]{3}$/;
+                 var regex=/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,10})(.[a-z]{2,10})?$/;
+          if(regex.test(username)){
+          alert("Valid Username");
+          document.getElementById('ibluser').style.visibility="hidden";
+       }else{
+          //  alert(" InValid Username");
+          document.getElementById('ibluser').style.visibility="visible";
+       }
+    }
+  </script>
+</head>
+<body style="align-items: center;">
+ 
+    <label>NAME</label></br></br>
+    <input id="uname" type="text" placeholder="Username" /></br></br>
+    <label id="ibluser" style="color:red;visibility: hidden;">Invalid Username</label>
+    <button onclick=validate() type="button">Submit</button>
+
+  
+</body>
+</html>
