@@ -11,4 +11,12 @@ function doubleCharacterSwap(str, c1, c2) {
   }
   return newstr;
 }
-console.log(doubleCharacterSwap("aabbcc", "a", "c"));
+// console.log(doubleCharacterSwap("aabbcc", "a", "c"));
+
+function swapDouble(str, c1, c2) {
+  return str
+    .split("")
+    .map((char) => (char === c1 ? c2 : char === c2 ? c1 : char))
+    .join("");
+}
+console.log(swapDouble("aabbcc", "a", "c"));
