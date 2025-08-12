@@ -9,7 +9,6 @@ function maxWordsCanType(str, brokenLetter) {
       }
     }
   }
-  // return letter;
   return Math.abs(letter.length - split.length);
 }
 console.log(maxWordsCanType("I am a programmer", "a"));
