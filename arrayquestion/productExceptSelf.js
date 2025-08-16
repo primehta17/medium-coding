@@ -1,5 +1,5 @@
 function productExceptSelf(nums) {
-  if (nums.length <= 1) return []; // handle edge case
+  if (nums.length <= 1) return [1]; // handle edge case
   let result = [];
   for (let i = 0; i < nums.length; i++) {
     let prod = 1;
