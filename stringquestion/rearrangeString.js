@@ -12,4 +12,26 @@ function rearrangeString(strin) {
   return str.join("");
 }
 
-console.log(rearrangeString("programming"));
+// console.log(rearrangeString("programming"));
+
+const rearrangeStringfor = (string) => {
+  let arr = [];
+  for (let i = 0; i < string.length; i++) {
+    arr.push(string[i]);
+  }
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[j] < arr[j + 1]) {
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+  let newstr = "";
+  for (let i = 0; i < arr.length; i++) {
+    newstr += arr[i];
+  }
+  return newstr;
+};
+console.log(rearrangeStringfor("programmix"));
